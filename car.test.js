@@ -23,3 +23,11 @@ describe("price test", () => {
         expect(actual).toBe(expected);
     })
 })
+
+describe("engine test", () => {
+    test("can access engine info", () => {
+        expected = "Hybrid";
+        actual = car1.engineType;
+        expect(actual).toBe(expected);
+    })
+})
