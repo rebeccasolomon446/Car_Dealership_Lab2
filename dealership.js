@@ -7,3 +7,4 @@ const Dealership = function(name, maxNumbOfCars, carsInStock){
 // Method to count number of stock
 Dealership.prototype.countCars = function() {
     return this.carsInStock.length;
+}
