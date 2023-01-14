@@ -14,18 +14,19 @@ beforeEach(() => {
    car2 = new Car("Ford Focus", 150000, "Deisel");
    car3 = new Car("Mercedes S Class", 46000, "Hybrid");
    // adds cars to dealership1
-   dealership1.addCar(car1);
-   dealership1.addCar(car2);
-   dealership1.addCar(car3);
+   dealership1.addCars(car1);
+   dealership1.addCars(car2);
+   dealership1.addCars(car3);
 })
 
 describe("dealership tests", () => {
 
     // Testing if I can add cars to dealership1 object
-    // test("can add cars to a dealership object", () => {
-    //     expected = 3;
-    //     actual = 
-    // })
+    test("can add cars to a dealership object", () => {
+        car4 = new Car("Mini Cooper", 8000, "petrol");
+        expected = 3;
+        actual = dealership1.addCar(car4);
+    })
 
     // Testing countCars method
     // test("can count the cars in stock at a dealership", () => {
