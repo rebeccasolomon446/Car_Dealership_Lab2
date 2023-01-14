@@ -1,10 +1,11 @@
 const { Car } = require("./car");
 const {Dealership} = require("./dealership");
 
-let dealership1;
+// let dealership1;
 let car1;
 let car2;
 let car3;
+let car4;
 
 beforeEach(() => {
     // Initialise a dealership object
@@ -20,18 +21,17 @@ beforeEach(() => {
 })
 
 describe("dealership tests", () => {
-
     // Testing if I can add cars to dealership1 object
     test("can add cars to a dealership object", () => {
         car4 = new Car("Mini Cooper", 8000, "petrol");
-        expected = 3;
+        expected = 4;
         actual = dealership1.addCars(car4);
     })
 
     // Testing countCars method
-    // test("can count the cars in stock at a dealership", () => {
-    //     expected = 4;
-    //     actual = dealership1.countCars();
-    //     expect(actual).toBe(expected);
-    // })
+    test("can count the cars in stock at a dealership", () => {
+        expected = 3;
+        actual = dealership1.countCars();
+        expect(actual).toBe(expected);
+    })
 })
