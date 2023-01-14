@@ -2,10 +2,10 @@ const { Car } = require("./car");
 const {Dealership} = require("./dealership");
 
 // let dealership1;
-let car1;
-let car2;
-let car3;
-let car4;
+// let car1;
+// let car2;
+// let car3;
+// let car4;
 
 beforeEach(() => {
     // Initialise a dealership object
