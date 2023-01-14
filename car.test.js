@@ -14,6 +14,12 @@ describe("manufacturer test", () => {
         actual = car1.manufacturer;
         expect(actual).toBe(expected);
     })
-    
+})
 
+describe("price test", () => {
+    test("can access price info", () => {
+        expected = 10000;
+        actual = car1.price;
+        expect(actual).toBe(expected);
+    })
 })
