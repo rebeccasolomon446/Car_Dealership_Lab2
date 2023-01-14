@@ -25,7 +25,7 @@ describe("dealership tests", () => {
     test("can add cars to a dealership object", () => {
         car4 = new Car("Mini Cooper", 8000, "petrol");
         expected = 3;
-        actual = dealership1.addCar(car4);
+        actual = dealership1.addCars(car4);
     })
 
     // Testing countCars method
