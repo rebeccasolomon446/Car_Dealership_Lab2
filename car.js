@@ -4,3 +4,4 @@ const Car = function (manufacturer, price, engineType) {
     this.price = price;
     this.engineType = engineType;
 }
+
