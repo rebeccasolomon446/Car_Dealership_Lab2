@@ -8,3 +8,6 @@ const Dealership = function(name, maxNumbOfCars, carsInStock){
 Dealership.prototype.countCars = function() {
     return this.carsInStock.length;
 }
+
+// export function for testing
+module.exports = {Dealership};
